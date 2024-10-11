@@ -1,5 +1,5 @@
 
-# GPT Chatbot using Next.js
+# MLB Chatbot using Next.js
 
 This is a simple GPT-powered chatbot built using **Next.js** (App Router) and the **OpenAI API**. It allows users to input queries and receive responses from the GPT-3.5 model using the OpenAI `chat/completions` endpoint.
 
@@ -40,7 +40,7 @@ This is a simple GPT-powered chatbot built using **Next.js** (App Router) and th
 
 The API route `POST /api/gpt` accepts user queries and forwards them to the OpenAI API. The response is sent back as a JSON object containing the AI-generated reply.
 
-- **Request Body**: 
+- **Request Body**:
   ```json
   {
     "message": "Your query here"

@@ -32,12 +32,16 @@ export default function Home() {
 
   return (
     <div>
-      <h1>GPT Chatbot</h1>
-      <div style={{ border: '1px solid #ddd', padding: '10px', width: '400px', margin: '0 auto' }}>
-        <div style={{ height: '300px', overflowY: 'auto', marginBottom: '10px' }}>
+      <div className='flex justify-center items-center w-100 h-20'>
+        <h1 className='text-3xl'>Chatbot</h1>
+      </div>
+      <div className='rounded-lg outline-dashed outline-black outline-2 outline-offset-4 p-2.5 my-0 mx-auto w-11/12'>
+        <div className='w-full h-96 overflow-y-auto mb-2.5' >
           {chat.map((msg: any, index: any) => (
             <div key={index}>
-              <strong>{msg.role === 'user' ? 'You' : 'GPT'}:</strong> {msg.content}
+              <p>
+                <strong>{msg.role === 'user' ? 'You' : 'Jefe'}:</strong> {msg.content}
+              </p>
             </div>
           ))}
         </div>

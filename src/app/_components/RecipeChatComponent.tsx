@@ -52,18 +52,21 @@ const RecipeChatComponent = () => {
                 key={k}
                 className='basis-1/3 shrink-0 text-center shadow-xl rounded-xl bg-white overflow-hidden'
               >
-                <div className='w-full h-32'>
+                <div className='w-full h-44 overflow-hidden'>
                   <Image
                     src={i.image}
                     alt={`Take a look at the ${i.title} recipe.`}
-                    className='max-w-full mx-auto h-40 w-full object-cover object-center'
+                    className='mx-auto h-48 w-full object-cover object-center'
                     width={312}
                     height={231}
                   />
                 </div>
-                <Link href={`/recipes/${i.id}`} className='text-xl block py-4'>
+                <div className='h-20 flex justify-center items-center'>
+
+                <Link href={`/recipes/${i.id}`} title={i.title} aria-label={`View the ${i.title} recipe.`} className='text-xl block py-4 cursor-pointer'>
                   {i.title}
                 </Link>
+                </div>
               </div>
             ))}
           </div>

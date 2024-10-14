@@ -1,5 +1,10 @@
-import './globals.css'
+import '../css/output.css'
+import '../css/custom-style.css'
+
 import type { Metadata } from 'next'
+import Nav from './_components/Nav'
+import Link from 'next/link'
+import Footer from './_components/Footer'
 
 export const metadata: Metadata = {
   title: 'Practice Chat Bot',
@@ -15,8 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className='max-w-full'>
+          <Nav />
           {children}
         </main>
+          <Footer/>
         </body>
     </html>
   )

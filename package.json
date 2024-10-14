@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tailwind": "npx tailwindcss -i ./src/_assets/style.css -o ./src/css/output.css --watch"
+
   },
   "dependencies": {
     "@types/node": "22.7.5",

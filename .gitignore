@@ -33,3 +33,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+src/_assets/helvinrymer.jsonl
+src/_assets/mhslending.jsonl
+src/_assets/sample.json

@@ -1,20 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 
-export const getStaticParams = async () => {
-
-  const res = await fetch(
-    `https://api.spoonacular.com/recipes/random?number=10&apiKey=${process.env.NEXT_PUBLIC_REACT_APP_SPOONACULAR_API_KEY}`
-  );
-  const data = await res.json();
-
-  const paths = data.recipes.map((recipe: any) => ({
-    params: { id: recipe.id.toString() },
-  }));
-
-  return paths;
-};
-
 const Recipe = async ({ params }: any) => {
   const { id } = params;
 

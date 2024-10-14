@@ -1,11 +1,10 @@
-'use client'
 import Link from 'next/link';
 import React from 'react'
 
-const Nav = () => {
+const Navigation = () => {
   return (
     <nav className='w-100 py-4'>
-      <ul className='flex flex-col md:flex-row justify-center items-center gap-x-2'>
+      <ul className='flex flex-col md:flex-row justify-start items-center gap-x-3 max-w-sm mx-auto'>
         <li className='text-lg'>
           <Link href={'/'}>Home</Link>
         </li>
@@ -17,4 +16,4 @@ const Nav = () => {
   );
 }
 
-export default Nav
+export default Navigation

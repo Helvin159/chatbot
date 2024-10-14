@@ -14,11 +14,11 @@ const RecipeChatComponent = () => {
       <div className='flex p-5'>
         <input
           value={message}
-          className='border-2 border-dashed border-black p-2'
+          className='border-2 border-dashed border-black focus:outline-black focus:outline-1 p-3 mr-2 text-lg w-11/12'
           onChange={(e) => setMessage(e.target.value)}
-          placeholder='Type your message...' />
-        <button onClick={async () => await sendMessage(message, setLoading, setResponse)} disabled={!message || loading} className='rounded bg-black text-white w-24 ml-4'>
-          {loading ? 'Sending...' : 'Send'}
+          placeholder='What ingredients do you have in mind?' />
+        <button onClick={async () => await sendMessage(message, setLoading, setResponse)} disabled={!message || loading} className='rounded bg-black text-white min-w-24 text-nowrap p-4'>
+          {loading ? 'Searching...' : 'Find Recipe'}
         </button>
       </div>
       {response && (

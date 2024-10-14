@@ -2,8 +2,7 @@ import '../css/output.css'
 import '../css/custom-style.css'
 
 import type { Metadata } from 'next'
-import Nav from './_components/Nav'
-import Link from 'next/link'
+import Navigation from './_components/Navigation'
 import Footer from './_components/Footer'
 
 export const metadata: Metadata = {
@@ -19,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Nav />
+        <Navigation />
         <main className='min-h-dvh max-w-full'>
           {children}
         </main>

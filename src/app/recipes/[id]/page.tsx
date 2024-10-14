@@ -15,7 +15,7 @@ const Recipe = async ({ params }: any) => {
       </section>
       <section className='p-4'>
         <div className='p-4 text-center'>
-          <h1 className='text-3xl font-semibold'>{data.title}</h1>
+          <h1 className='text-3xl font-semibold capitalize'>{data.title}</h1>
           <ul className='flex flex-row gap-x-4 justify-center items-center'>
             <li>Ready in {data.readyInMinutes} minutes</li>
             <li>Large enough for {data.servings} serving{data.servings > 1 && 's'}</li>

@@ -8,6 +8,7 @@ This is a simple GPT-powered chatbot built using **Next.js** (App Router) and th
 - **Next.js (App Router)**: Handles both the frontend and API routes.
 - **OpenAI GPT-3.5 API**: Provides AI-powered responses.
 - **Server-Side API Protection**: The API key is securely handled on the server-side.
+- **Spoonacular**: https://spoonacular.com/food-api/docs
 
 ## Installation
 

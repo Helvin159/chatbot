@@ -19,11 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className='max-w-full'>
-          <Nav />
+        <Nav />
+        <main className='min-h-dvh max-w-full'>
           {children}
         </main>
-          <Footer/>
+        <Footer/>
         </body>
     </html>
   )
